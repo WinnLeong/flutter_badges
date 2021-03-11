@@ -159,7 +159,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-          RaisedButton.icon(
+          ElevatedButton.icon(
               onPressed: () {
                 setState(() {
                   _counter++;
@@ -167,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               icon: Icon(Icons.add),
               label: Text('Add to cart')),
-          RaisedButton.icon(
+          ElevatedButton.icon(
               onPressed: () {
                 if (_counter > 0) {
                   setState(() {
@@ -206,7 +206,7 @@ class _HomeScreenState extends State<HomeScreen> {
         '!',
         style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
       ),
-      child: RaisedButton(
+      child: ElevatedButton(
         onPressed: () {
           setState(() {
             showRaisedButtonBadge = !showRaisedButtonBadge;
